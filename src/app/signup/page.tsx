@@ -20,6 +20,10 @@ export default function signupPage() {
             setLoading(true)
             const response = await axios.post("/api/users/signup", user)
             console.log("Signup success", response.data)
+            if(!response.data.success){
+                toast.error(response.data.message)
+                return
+            }
             toast.success(`${response.data.message}`)
             setTimeout(() => {
                 toast.success(`Check your email`)

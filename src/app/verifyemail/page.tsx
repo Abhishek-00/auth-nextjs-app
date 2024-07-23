@@ -52,7 +52,8 @@ export default function verifyEmail() {
                     verified && (
                         <div className="flex flex-col items-center mt-5 gap-2 py-2">
                             <h2 className="text-2xl text-green-500">Email verified</h2>
-                            <span className="text-blue-400"> <Link href={"/login"}>Login</Link></span>
+                            <p>Go to<span className="text-blue-400"> <Link href={"/login"}>Login</Link></span> page.</p>
+
                         </div>
                     )
                 }
