@@ -12,4 +12,4 @@
 * Forgot Password
 * Reset Password
 * Middleware to prevent unauthorized access to pages
-
+* Email verification
